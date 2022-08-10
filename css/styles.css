@@ -132,12 +132,8 @@ img {
 
   color: var(--title-text-color);
 }
-.studio-link:hover,
-.studio-link:focus {
-  color: var(--accent-color);
-}
-.portfolio-link:hover,
-.portfolio-link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 .page-nav .current {
@@ -153,6 +149,12 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.links {
+  display: inline-block;
+  text-align: center;
+  fill: var(--primary-text-color);
+  color: var(--primary-text-color);
+}
 .links:hover,
 .links:focus {
   fill: var(--accent-bg-color);
@@ -165,12 +167,7 @@ img {
 .page-contacts .item:not(:last-child) {
   margin-right: 27px;
 }
-.links {
-  display: inline-block;
-  text-align: center;
-  fill: var(--primary-text-color);
-  color: var(--primary-text-color);
-}
+
 .mail-icon {
   width: 16px;
   height: 16px;
@@ -343,9 +340,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.adventages {
-  background-color: var(--adventages-bg-color);
-}
+
 .our-title {
   position: absolute;
   width: 1px;
@@ -359,18 +354,16 @@ img {
   overflow: hidden;
 }
 .our-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
 
   background-color: var(--team-bg-color);
   border-radius: 4px;
 }
 
-.our-icon {
-  width: 70px;
-  height: 70px;
-}
 .adventages-title {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -394,7 +387,6 @@ img {
 /* What we do */
 .examples {
   padding-top: 0;
-  background-color: var(--adventages-bg-color);
 }
 .title {
   margin-bottom: 50px;
@@ -414,8 +406,11 @@ img {
 .team {
   background-color: var(--team-bg-color);
 }
+.team-text{
+  padding: 30px 32px;
+}
 .team-name {
-  padding-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -424,7 +419,6 @@ img {
   color: var(--title-text-color);
 }
 .team-position {
-  margin-top: 10px;
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.9;
@@ -434,7 +428,6 @@ img {
   display: flex;
 }
 .card {
-  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -465,9 +458,6 @@ img {
   background-color: var(--accent-bg-color);
 }
 /* Regular-clients */
-.regular-clients {
-  background-color: var(--adventages-bg-color);
-}
 .clients-list {
   display: flex;
   align-items: center;
@@ -477,10 +467,11 @@ img {
   margin-right: 30px;
 }
 .clients {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   border: 1px solid var(--network-icon-color);
   border-radius: 4px;
   fill: var(--network-icon-color);
@@ -545,12 +536,9 @@ img {
 }
 .card-set .item {
   flex-basis: calc((100% - 60px) / 3);
-
-  background-color: var(--header-bg-color);
-  border: 1px solid var(--cs-border-color);
 }
-.card-set .item:hover,
-.card-set .item:focus {
+.portfolio-works a:hover,
+.portfolio-works a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -559,11 +547,19 @@ img {
 }
 
 .portfolio-works a {
-  text-decoration: none;
+  display: block;
+  background-color: var(--header-bg-color);
+}
+.card-text {
+  padding: 20px 24px;
+
+  border-right: 1px solid var(--cs-border-color);
+  border-bottom: 1px solid var(--cs-border-color);
+  border-left: 1px solid var(--cs-border-color);
 }
 .portfolio-works h2 {
-  padding: 20px 24px 0px 24px;
   margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -572,7 +568,6 @@ img {
   color: var(--title-text-color);
 }
 .portfolio-works p {
-  padding: 0px 24px 20px 24px;
   font-size: 16px;
   line-height: 1.88;
 
