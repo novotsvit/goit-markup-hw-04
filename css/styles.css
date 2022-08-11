@@ -249,10 +249,12 @@ img {
   color: var(--accent-color);
 }
 .net-links {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
+  
   border-radius: 50%;
   fill: var(--hero-color);
   background: var(--network-bg-color);
@@ -445,10 +447,11 @@ img {
   margin-right: 10px;
 }
 .network-links {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
   fill: var(--network-icon-color);
 }
